@@ -1,5 +1,8 @@
 name: Outputs test
-on: [pull_request, push]
+on:
+  push:
+    branches-ignore:
+      - master
 jobs:
   job1:
     runs-on: ubuntu-latest

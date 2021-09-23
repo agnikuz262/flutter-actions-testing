@@ -2,7 +2,7 @@ name: Build Android app
 on:
   push:
     branches:
-      - master
+      - action-test
 jobs:
   build-android:
     runs-on: ubuntu-latest
@@ -31,5 +31,5 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: release-apk-test
-          path: build/app/outputs/apk/release/release-apk-test.apk
+          path: build/app/outputs/flutter-apk/release-apk-test.apk
 

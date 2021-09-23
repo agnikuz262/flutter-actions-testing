@@ -1,5 +1,8 @@
 name: Env variables Test
-on: [push]
+on:
+  push:
+    branches-ignore:
+      - master
 jobs:
   try-env-variables:
     name: Env variables attempt
