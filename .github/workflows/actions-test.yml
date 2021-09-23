@@ -1,0 +1,13 @@
+name: Env variables Test
+on: [push]
+jobs:
+  try-env-variables:
+    name: Env variables attempt
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print hello sentence
+        env:
+          SENTENCE: Hi there! My name is
+          FIRST_NAME: Aga
+          LAST_NAME: Ku
+        run: echo $SENTENCE $FIRST_NAME $LAST_NAME
