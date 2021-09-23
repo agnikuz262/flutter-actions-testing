@@ -27,9 +27,3 @@ jobs:
       - name: Build APK
         run: flutter build apk
 
-      - name: Save APK
-        uses: actions/upload-artifact@v1
-        with:
-          name: release-apk-test
-          path: build/app/outputs/flutter-apk/release-apk-test.apk
-
