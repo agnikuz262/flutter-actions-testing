@@ -1,4 +1,4 @@
-name: GitHub Actions Test
+name: Env variables Test
 on: [push]
 jobs:
   try-env-variables:
