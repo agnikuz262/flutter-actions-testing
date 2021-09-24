@@ -12,15 +12,19 @@ jobs:
         with:
           java-version: '12.x'
 
-      - name: Cache Flutter
-        uses: actions/cache@v1
-        with:
-          path: /opt/hostedtoolcache/flutter
-          key: flutter-key
-
       - uses: subosito/flutter-action@v1
         with:
           flutter-version: '2.5.0'
+
+      - name: Cache flutter build
+        uses: actions/cache@v2
+        with:
+          path: |
+            build/
+            android/.gradle/
+          key: flutter-cache-key
+          restore-keys: |
+            flutter-cache-key
 
       - name: Cache pubspec dependencies
         uses: actions/cache@v2
