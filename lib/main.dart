@@ -10,7 +10,7 @@ class ActionsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Github Actions Testing',
+      title: 'Flutter Github Actions',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
