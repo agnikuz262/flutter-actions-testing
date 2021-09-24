@@ -2,7 +2,7 @@ name: Outputs test
 on:
   push:
     branches-ignore:
-      - master
+      - action-test
 jobs:
   job1:
     runs-on: ubuntu-latest

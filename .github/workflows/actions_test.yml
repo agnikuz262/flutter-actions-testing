@@ -2,7 +2,7 @@ name: Env variables Test
 on:
   push:
     branches-ignore:
-      - master
+      - action-test
 jobs:
   try-env-variables:
     name: Env variables attempt
