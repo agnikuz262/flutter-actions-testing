@@ -14,7 +14,7 @@ class ActionsApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(title: 'Flutter Github Actions Testing'),
+      home: const HomePage(title: 'Flutter Github Actions'),
     );
   }
 }
