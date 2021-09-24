@@ -11,18 +11,16 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: '12.x'
+
+      - name: Cache Flutter
+        uses: actions/cache@v1
+        with:
+          path: /opt/hostedtoolcache/flutter
+          key: flutter-key
+
       - uses: subosito/flutter-action@v1
         with:
           flutter-version: '2.5.0'
-
-      - name: Cache flutter
-        uses: actions/cache@v2
-        with:
-          path: |
-            ${{ env.FLUTTER_HOME }}/bin
-          key: install-flutter-2.5.0
-          restore-keys: |
-            install-flutter-
 
       - name: Cache pubspec dependencies
         uses: actions/cache@v2
