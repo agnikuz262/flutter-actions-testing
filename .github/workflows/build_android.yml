@@ -22,9 +22,9 @@ jobs:
 #          path: |
 #            build/
 #            android/.gradle/
-          key: flutter-cache-key
-          restore-keys: |
-            flutter-cache-key
+#          key: flutter-cache-key
+#          restore-keys: |
+#            flutter-cache-key
 
       - name: Cache pubspec dependencies
         uses: actions/cache@v2
